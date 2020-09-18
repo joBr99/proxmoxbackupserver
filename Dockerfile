@@ -10,7 +10,7 @@ RUN wget http://download.proxmox.com/debian/proxmox-ve-release-6.x.gpg -O /etc/a
 
 #Install packages
 RUN apt-get update
-RUN apt-get install -y proxmox-backup-server=0.8.15-1
+RUN apt-get install -y proxmox-backup-server=0.8.16-1
 
 #Activate backup user
 RUN chsh -s /bin/bash backup
