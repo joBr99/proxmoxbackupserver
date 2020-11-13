@@ -17,4 +17,5 @@ RUN chsh -s /bin/bash backup
 #Start...
 COPY entrypoint.sh /
 RUN chmod a+x /entrypoint.sh
+ENTRYPOINT /entrypoint.sh
 STOPSIGNAL SIGINT
