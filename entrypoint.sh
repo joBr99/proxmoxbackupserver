@@ -3,6 +3,8 @@
 #fix ownership
 chown -R backup:backup /etc/proxmox-backup
 chmod -R 700 /etc/proxmox-backup
+chown -R backup:backup /var/lib/proxmox-backup
+chmod -R 700 /var/lib/proxmox-backup
 
 # Start the first process
 ./usr/lib/x86_64-linux-gnu/proxmox-backup/proxmox-backup-api &
