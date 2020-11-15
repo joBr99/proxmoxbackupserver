@@ -11,7 +11,7 @@ Current limitations:
 
  - Only storage that is mapped with dicrectory will work.
 
-
+```
 # docker-compose.yml
 version: '3'
 services:
@@ -27,3 +27,4 @@ services:
       - /etc/shadow:/etc/shadow:ro #Mounts your hosts password file as read-only, your host root password can be used to sign in
       - ./data/etc-proxmox-backup:/etc/proxmox-backup
       - ./data/var-lib-proxmox-backup:/var/lib/proxmox-backup
+```
