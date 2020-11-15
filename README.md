@@ -4,12 +4,12 @@
 Docker container for running proxmox backup server in docker,
 Ref:[https://pbs.proxmox.com/](https://pbs.proxmox.com/)
 
-Docker Hub link: https://hub.docker.com/repository/docker/einar/proxmoxbackup
-This image is by no means ready for production, but if you want to take PBS for a quick test spin, then this is for you.
 
 Current limitations:
 
  - Only storage that is mapped with dicrectory will work.
+ - Some of the statistic graphs are not working
+ - Maybe other limitations
 
 ```
 # docker-compose.yml
