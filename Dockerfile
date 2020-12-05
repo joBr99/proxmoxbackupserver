@@ -9,7 +9,7 @@ RUN apt-get update && \
   echo "deb http://download.proxmox.com/debian/pbs buster pbs-no-subscription" > /etc/apt/sources.list.d/pbs-no-subscription.list && \
   wget http://download.proxmox.com/debian/proxmox-ve-release-6.x.gpg -O /etc/apt/trusted.gpg.d/proxmox-ve-release-6.x.gpg && \
   apt-get update && \
-  apt-get install -y proxmox-backup-server=1.0.1-1
+  apt-get install -y proxmox-backup-server=1.0.5-1
 
 #Activate backup user
 RUN chsh -s /bin/bash backup
